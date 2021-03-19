@@ -7,7 +7,7 @@
 
 namespace agl
 {
-   enum PrimitiveType {UNDEFINED, LINES, TRIANGLES, CIRCLES, RECTANGLES};
+   enum PrimitiveType {UNDEFINED, POINTS, LINES, TRIANGLES, CIRCLES, RECTANGLES};
    class canvas
    {
    public:
@@ -17,6 +17,7 @@ namespace agl
       // Save to file
       void save(const std::string& filename);
       void begin(PrimitiveType type);
+      void drawPoint();
       void line(point a, point b);
       void lines();
       void lineLow(int H, int W, point a, point b);

@@ -24,6 +24,8 @@ void canvas::begin(PrimitiveType type)
 
 void canvas::end()
 {
+   if (primType == POINTS)
+      drawPoint();
    if (primType == LINES){
       if (points.size() > 2)
          lines();
@@ -50,10 +52,16 @@ void canvas::end()
       else
          outlinedRectangle(cen, hR, wR);
    }
+
    points.clear();
    drawingColor.clear();
    fill = false;
    grad = false;
+}
+void canvas::drawPoint(){
+   int ax = points[0].x;
+   int ay = points[0].y;
+   _canvas.set(ax,ay,drawingColor[0]);
 }
 
 void canvas::lineLow(int H, int W, point a, point b)

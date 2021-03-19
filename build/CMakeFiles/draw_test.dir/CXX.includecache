@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/niginadaniyarova/Desktop/cs312/canvas-drawer/src/canvas.cpp
-canvas.h
-/Users/niginadaniyarova/Desktop/cs312/canvas-drawer/src/canvas.h
-cassert
--
-
 /Users/niginadaniyarova/Desktop/cs312/canvas-drawer/src/canvas.h
 string
 -

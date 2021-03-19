@@ -17,6 +17,27 @@ void test_line(canvas& drawer, int ax, int ay, int bx, int by, const std::string
 int main(int argc, char** argv)
 {
    canvas drawer(100, 100);
+
+   //points
+   drawer.begin(POINTS);
+   drawer.color(254, 127, 156);
+   drawer.vertex(50,50);
+   drawer.end();
+
+   drawer.begin(POINTS);
+   drawer.drawPoint();
+   drawer.color(254, 127, 156);
+   drawer.vertex(25,50);
+   drawer.end();
+
+   drawer.begin(POINTS);
+   drawer.drawPoint();
+   drawer.color(254, 127, 156);
+   drawer.vertex(75,50);
+   drawer.end();
+   
+   drawer.save("point.png");
+
    drawer.color(255, 255, 255);
    test_line(drawer, 0, 50, 100, 50, "horizontal-line.png");
    test_line(drawer, 50, 0, 50, 100, "vertical-line.png");
