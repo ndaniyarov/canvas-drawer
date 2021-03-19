@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/niginadaniyarova/Desktop/cs312/canvas-drawer/src/canvas.cpp
+canvas.h
+/Users/niginadaniyarova/Desktop/cs312/canvas-drawer/src/canvas.h
+cassert
+-
+
+/Users/niginadaniyarova/Desktop/cs312/canvas-drawer/src/canvas.h
+string
+-
+vector
+-
+ppm_image.h
+/Users/niginadaniyarova/Desktop/cs312/canvas-drawer/src/ppm_image.h
+
+/Users/niginadaniyarova/Desktop/cs312/canvas-drawer/src/draw_test.cpp
+iostream
+-
+canvas.h
+/Users/niginadaniyarova/Desktop/cs312/canvas-drawer/src/canvas.h
+
+/Users/niginadaniyarova/Desktop/cs312/canvas-drawer/src/ppm_image.h
+iostream
+-
+

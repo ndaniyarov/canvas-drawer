@@ -1,0 +1,4 @@
+/Users/niginadaniyarova/Desktop/cs312/canvas-drawer/build/CMakeFiles/draw_art.dir
+/Users/niginadaniyarova/Desktop/cs312/canvas-drawer/build/CMakeFiles/rebuild_cache.dir
+/Users/niginadaniyarova/Desktop/cs312/canvas-drawer/build/CMakeFiles/edit_cache.dir
+/Users/niginadaniyarova/Desktop/cs312/canvas-drawer/build/CMakeFiles/draw_test.dir
