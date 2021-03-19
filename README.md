@@ -48,6 +48,11 @@ canvas-drawer/build $ ../bin/draw_art
 
 ## Supported primitives
 
+POINTS
+
+![point](https://user-images.githubusercontent.com/55757317/111724248-49f25b80-883b-11eb-9892-614773d4333c.png)
+
+
 LINES
 
 ![horizontal-line](https://user-images.githubusercontent.com/55757317/111714345-d2ff9780-8827-11eb-9bc4-c685e3a8947f.png) ![vertical-line](https://user-images.githubusercontent.com/55757317/111714359-d7c44b80-8827-11eb-91eb-7f45533288c9.png) ![diagonal-line-1](https://user-images.githubusercontent.com/55757317/111714369-dbf06900-8827-11eb-9566-ce8613252e59.png) ![h-lessthan-w-line-1](https://user-images.githubusercontent.com/55757317/111714382-e3177700-8827-11eb-8f01-a8af2f8832a5.png) ![w-lessthan-h-line-1](https://user-images.githubusercontent.com/55757317/111714386-e9a5ee80-8827-11eb-84e2-b765edcf16b5.png) ![diagonal-line-2](https://user-images.githubusercontent.com/55757317/111714399-f0ccfc80-8827-11eb-8936-289ce6a09197.png) ![h-lessthan-w-line-2](https://user-images.githubusercontent.com/55757317/111714416-f9bdce00-8827-11eb-9bf6-f1530a0e2607.png) ![w-lessthan-h-line-2](https://user-images.githubusercontent.com/55757317/111714425-fcb8be80-8827-11eb-84bc-6d0fe70201ac.png)
