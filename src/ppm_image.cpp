@@ -50,7 +50,7 @@ ppm_pixel ppm_image::get(int row, int col) const
     return myData[row*myWidth + col];
 }
 
-void ppm_image::set(int row, int col, const ppm_pixel& color)
+void ppm_image::set(int col, int row, const ppm_pixel& color)
 {
     assert(row >= 0 && row < myHeight);
     assert(col >= 0 && col < myWidth);

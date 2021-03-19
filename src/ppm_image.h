@@ -13,6 +13,14 @@ namespace agl
         unsigned char g;
         unsigned char b;
     };
+    struct point
+    {
+        int x, y;
+        point(): x(0), y(0){};
+        point(int x, int y) : x(x), y(y){};
+        
+    };
+
 
     class ppm_image
     {

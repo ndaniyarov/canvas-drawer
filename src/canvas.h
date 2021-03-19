@@ -7,7 +7,7 @@
 
 namespace agl
 {
-   enum PrimitiveType {UNDEFINED, LINES, TRIANGLES};
+   enum PrimitiveType {UNDEFINED, LINES, TRIANGLES, CIRCLES, RECTANGLES};
    class canvas
    {
    public:
@@ -16,18 +16,29 @@ namespace agl
 
       // Save to file
       void save(const std::string& filename);
-
-      // Draw primitives with a given type (either LINES or TRIANGLES)
-      // For example, the following draws a red line followed by a green line
-      // begin(LINES);
-      //    color(255,0,0);
-      //    vertex(0,0);
-      //    vertex(100,0);
-      //    color(0,255,0);
-      //    vertex(0, 0);
-      //    vertex(0,100);
-      // end();
       void begin(PrimitiveType type);
+      void line(point a, point b);
+      void lines();
+      void lineLow(int H, int W, point a, point b);
+      void lineHigh(int H, int W, point a, point b);
+      void outlinedTriangle();
+      void outlineTriangle(point a, point b, point c);
+      void filledTriangle();
+      float barycentric_coord(point a, point b, point input);
+      void barycentric_fill(point a, point b, point c);
+      void outlinedCircle(point o, int r);
+      void filledCircle(point o, int r);
+      void gradientCircle(point o, int r);
+      void filledRectangle(point o, int h, int w);
+      void outlinedRectangle(point o, int h, int w);
+      void radius(int r);
+      void center(int x, int y);
+      void heightRec(int h);
+      void widthRec(int w);
+      void filled(bool f);
+      float distance(point p1, point p2);
+      void gradient(bool g);
+      void hole(int h);
       void end();
 
       // Specifiy a vertex at raster position (x,y)
@@ -42,6 +53,16 @@ namespace agl
 
    private:
       ppm_image _canvas;
+      PrimitiveType primType;
+      std::vector<ppm_pixel> drawingColor;
+      std::vector<point> points;
+      point cen;
+      int hR;
+      int wR;
+      int holeR;
+      int radiusVar;
+      bool fill;
+      bool grad;
    };
 }
 
