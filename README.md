@@ -3,7 +3,8 @@
 Implements a simple drawing api
 
 
-![kitten](https://user-images.githubusercontent.com/55757317/111721123-a9e60380-8835-11eb-8aab-16636a07557f.png)
+![kitten](https://user-images.githubusercontent.com/55757317/111721302-fb8e8e00-8835-11eb-87d8-d11d568dffee.png)
+
 
 
 ## How to build
